@@ -1,0 +1,372 @@
+body, .dropdown-menu{
+  background-color: #EEE9DA;
+}
+
+#navbar{
+  background-color: #6096B4;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+a.nav-link{
+  color: #BDCDD6;
+  font-size: 1.5rem;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+li.nav-item:hover{
+  background-color:#EEE9DA;
+}
+
+.nav-link.icons8, .dropdown-item{
+  color: #93BFCF;
+  font-size: 1rem;
+}
+
+section{
+  padding-top: 100px;
+}
+
+#home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #6096B4,#93BFCF,#BDCDD6,#EEE9DA);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.home-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container .name{
+  color: #6096B4;
+  font-size: 8rem;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+.home-container p{
+  text-align: center;
+  color: #6096B4;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+#about{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.about-container h2{
+  font-family: 'Pacifico', cursive;
+  color: #6096B4;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.aboutme-container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.aboutme-container p{
+  color: #6096B4;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.aboutme-container img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#experience{
+  width: 100vw;
+  height: 100vh;
+  background-color: #6096B4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ex-container{
+  height: 90%;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  gap: 25px;
+}
+
+.ex-container h2{
+  font-family: 'Pacifico', cursive;
+  color: #EEE9DA;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.ex-description{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ex-item h3, .ex-item h4, .ex-item ul{
+  color: #EEE9DA;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.ex-item h3, .ex-item h4{
+  text-align: center;
+  font-weight: bold;
+}
+
+#education{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20%;
+}
+
+.ed-container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.ed-description1{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ed-description1 h2{
+  font-family: 'Pacifico', cursive;
+  color: #6096B4;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.ed-item{
+  margin-bottom: 10%;
+  color: #6096B4;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.ed-item h3, .ed-item h4{
+  font-weight: bold;
+}
+
+.hr1{
+  border: none;
+  width: 100%;
+  border-top: .28rem solid #6096B4;
+  border-bottom: .6rem solid #6096B4;
+  height: 1.2rem;
+}
+
+
+.ed-description2 h2{
+  font-family: 'Pacifico', cursive;
+  color: #6096B4;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.grid-table{
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+
+.grid-table p{
+  font-weight: bold;
+}
+
+.ed-description1, .ed-description2{
+  box-shadow: 20px 20px 20px 10px #6096B4;
+}
+
+#project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #6096B4,#93BFCF,#BDCDD6,#EEE9DA);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+.proj-container{
+  height: 90%;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  gap: 25px;
+}
+
+.proj-container1 h2{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #EEE9DA;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.proj-container2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.pj-item img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.pj-item h3, .pj-item .container{
+  text-align: center;
+  color: #EEE9DA;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.pj-item h3, .pj-item .container a{
+  color: #EEE9DA;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.pj-item img{
+  box-shadow: 20px 20px 20px 10px #6096B4;
+}
+
+.footer-name{
+  font-family: 'Pacifico', cursive;
+  color: #6096B4;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.nav-link.github{
+  color: #6096B4;
+}
+
+.nav-link.github:hover{
+  color: #93BFCF;
+}
+
+.nav-link.icons8{
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  #about{
+    margin-bottom: 200px;
+    height: 200vh;
+  }
+
+  .about-container{
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .aboutme-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutme-container img{
+    width: 100%;
+    height: 71%;
+    object-fit: contain;
+  }
+
+  .ed-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #project{
+    margin-top: 135vh;
+    height: 250vh;
+  }
+
+  .proj-container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #experience{
+    height: 200vh;
+  }
+
+  .ex-description{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 780px){
+  #project{
+    margin-top: 135vh;
+    height: 300vh;
+  }
+  #education{
+    height: 150vh;
+  }
+}
+
+@media (max-width: 450px){
+  
+  #education{
+    height: 150vh;
+  }
+}
