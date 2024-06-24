@@ -96,4 +96,41 @@ const typed = new Typed('.multiple-text', {
   backSpeed: 100,
   backDelay: 1000,
   loop: true
-})
+});
+
+const coords = {x:  0, y: 0};
+const dots = document.querySelectorAll(".dot");
+const dotsColors =  ["#0ba8e6", "#00a6e6", "#00a0e5", "#0098e3", "#008de1", "#0080de", "#0073d9", "#0065d3", "#0058cc", "#004ec6", "#1246c1", "#1a43bf"];
+dots.forEach((dot, index) => {
+  dot.x = 0;
+  dot.y = 0;
+  dot.style.backgroundColor = dotsColors[index % dotsColors.length];
+});
+window.addEventListener("mousemove", (e) => {
+  coords.x = e.pageX;
+  coords.y = e.pageY;
+
+  animateDots();
+});
+
+const animateDots = () => {
+  let x = coords.x;
+  let y = coords.y;
+
+  dots.forEach((dot, index) => {
+    dot.style.left = x - 12 + "px";
+    dot.style.top = y - 12 + "px";
+
+    dot.style.scale = (dots.length - index) / dots.length;
+
+    dot.x = x;
+    dot.y = y;
+
+    const nextDot = dots[index + 1] || dots[0];
+    x += (nextDot.x - x) * 0.3;
+    y += (nextDot.y - y) * 0.3;
+
+  })
+}
+
+animateDots();
