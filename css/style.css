@@ -302,7 +302,7 @@ section {
 /* Skills */
 
 .skills {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .skills .container {
@@ -354,7 +354,7 @@ section {
 /* Education */
 
 .education {
-  background: var(--bg-color);
+  background: var(--second-bg-color);
 }
 
 .education .heading span {
